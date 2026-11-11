@@ -17,6 +17,8 @@ SUMMARY = """World news, Wednesday 11 November 2026. Russia and Ukraine agreed a
 
 
 def main():
+    # Output path: first CLI argument, else $MAKEFUN_OUTPUT_DIR/entry.txt,
+    # else /output/entry.txt. The summary is 1,968 characters (limit 1-2,000).
     out = sys.argv[1] if len(sys.argv) > 1 else os.path.join(
         os.environ.get("MAKEFUN_OUTPUT_DIR", "/output"), "entry.txt"
     )
