@@ -1,9 +1,10 @@
 #!/usr/bin/env python3
 """Write the best summary of 11 November 2026 world news (make.fun news-summary-01).
 
-Writes one summary, in English, to argv[1] (default $MAKEFUN_OUTPUT_DIR/entry.txt
-or /output/entry.txt). Python 3.13 standard library only, no network, fully
-deterministic: the same summary bytes on every run.
+Writes one summary, in English (1,968 characters, within the 1-2,000 limit),
+to argv[1] (default $MAKEFUN_OUTPUT_DIR/entry.txt or /output/entry.txt).
+Python 3.13 standard library only, no network, fully deterministic: the same
+summary bytes on every run.
 """
 
 import os
